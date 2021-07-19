@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div class="reveal">
       <div class="slides">
-        <section>Single Horizontal Slide</section>
+        <section>
+          <div>
+            <!-- <img src="./assets/logo.png" /> -->
+            <HelloWorld msg="Welcome to Your Vue.js App" />
+          </div>
+        </section>
         <section>
           <section>Vertical Slide 1</section>
           <section>Vertical Slide 2</section>
@@ -15,13 +18,13 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 import Reveal from "reveal.js";
 
 export default {
   name: "app",
   components: {
-    // HelloWorld
+    HelloWorld,
   },
   mounted() {
     Reveal.initialize();
@@ -32,6 +35,11 @@ export default {
 <style>
 @import url("../node_modules/reveal.js/dist/reveal.css");
 @import url("../node_modules/reveal.js/dist/theme/white.css");
+
+.reveal {
+  height: 100vh;
+  overflow: scroll;
+}
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
