@@ -5,11 +5,11 @@
         <section>
           <div>
             <!-- <img src="./assets/logo.png" /> -->
-            <HelloWorld msg="Welcome to Your Vue.js App" />
+            <HelloWorld msg="Helloworld works!" />
           </div>
         </section>
         <section>
-          <section>Vertical Slide 1</section>
+          <section><H5P /></section>
           <section>Vertical Slide 2</section>
         </section>
       </div>
@@ -20,14 +20,18 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import Reveal from "reveal.js";
+import H5P from "./components/H5P.vue";
+// import { render } from "@vue/runtime-dom";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
+    H5P,
   },
   mounted() {
     Reveal.initialize();
+    // Vue.render((h) => h(H5P));
   },
 };
 </script>
