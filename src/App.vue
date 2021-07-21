@@ -20,14 +20,14 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import Reveal from "reveal.js";
-import H5P from "./components/H5P.vue";
+// import H5P from "./components/H5P.vue";
 // import { render } from "@vue/runtime-dom";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
-    H5P,
+    // H5P,
   },
   mounted() {
     Reveal.initialize();
