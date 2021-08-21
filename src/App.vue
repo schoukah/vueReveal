@@ -9,7 +9,7 @@
           </div>
         </section>
         <section>
-          <section><H5P /></section>
+          <section></section>
           <section>Vertical Slide 2</section>
         </section>
       </div>
